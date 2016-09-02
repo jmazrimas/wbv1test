@@ -1,0 +1,11 @@
+<h1>I suck at rails?</h1>
+
+<%= form_for @report do |f| %>
+  <%= f.label :report_name %>:
+  <%= f.text_field :report_name %><br />
+
+  <%= f.label :image_url %>:
+  <%= f.file_field :image_url %><br />
+
+  <%= f.submit %>
+<% end %>
